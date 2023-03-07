@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1>My to-do list</h1>
+    </header>
+    <main>
+        <form action="">
+            <input type="text" name="" id="" class="todo-input" autocomplete="off">
+    
+            <button class="todo-button" type="submits">
+                <i class="fa-sharp fa-solid fa-plus"></i>
+            </button>
+
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">Всe</option>
+                    <option value="completed">Завершенные</option>
+                    <option value="uncompleted">Незавершенные</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

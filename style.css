@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-image: linear-gradient(120deg, #913175, #301E67);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form button{
+background-color: #301E65;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+form button:hover{
+    background-color:  #7b5abe;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style-type: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.todo li{
+    flex-grow: 1;
+}
+
+.trash-btn, .complete-btn{
+    background-color: #CD0404;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.complete-btn{
+    background-color: #03c955;
+}
+
+.trash-btn:hover{
+    background-color: #930c0c;
+}
+
+.complete-btn:hover{
+    background-color: #08a84bda;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotate(20deg);
+    opacity: 0;
+}
+
+.filter-todo{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+select{
+    color: #301E65;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #311a75;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+}
+
+.select:hover:after{
+    background-color: white;
+    color: #301E65;
+    transition: 0.3s;
+}
+
+option{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
